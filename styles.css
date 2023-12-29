@@ -1,0 +1,99 @@
+/* the css reset starts here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+/* the css reset ends here */
+
+html {
+  font-size: 20%;
+  box-sizing: border-box;
+}
+
+/* Layouts styles */
+.background {
+  background-image: url('/images/background-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100vw 50vh;
+  background-color: hsl(275, 100%, 97%);
+  background-position: top;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 25px;
+  max-width: 400px;
+}
+
+.faqs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.combine {
+  margin-bottom: 20px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: hsl(292, 16%, 49%);
+  margin-bottom: 20px;
+}
+
+/* Text styles */
+h1 {
+  color: hsl(292, 42%, 14%);
+  font-size: 10rem;
+}
+
+h2 {
+  color: hsl(292, 42%, 14%);
+  width: 200px;
+  font-size: 3.5rem;
+}
+
+p {
+  color: hsl(292, 16%, 49%);
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.hiddens {
+  display: none;
+}
+
+/* Media Query for desktop view */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 25%;
+    box-sizing: border-box;
+  }
+
+  .background {
+    background-image: url('/images/background-pattern-desktop.svg');
+    background-size: 100%;
+  }
+}
