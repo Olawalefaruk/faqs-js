@@ -33,7 +33,7 @@ html {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
   padding: 25px;
-  max-width: 400px;
+  width: 400px;
 }
 
 .faqs {
